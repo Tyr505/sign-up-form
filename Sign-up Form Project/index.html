@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Sign-Up Form</title>
+		<link type="text/css" rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
+		
+	</head>
+	
+	<body>
+		<div class="container">
+			<div class="img_container">
+				
+				<div class="img_title">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Samurai_Helmet_Icon.svg" alt="ronin">
+					<h1>RONIN</h1>
+				
+				</div>
+			
+			</div>
+			<div class="form_container">
+				
+				<h1>Sign Up</h1>
+				
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat augue non elit mollis mollis vel blandit mauris. Nunc diam dolor, tempus ut nisi vel, pulvinar ornare tellus. <br>
+				Sign up now to get started.</p>
+				
+				<p>You <i>know</i> you want to.</p>
+				
+				<form action="#">
+					
+					<div class="form_div">
+					
+						<div class="input">
+						<label for="first_name">First Name *</label>
+						<input type="text" id="first_name" name="first_name" placeholder="Ex: Musashi" required> 
+					</div>
+					<div class="input">
+						<label for="last_name">Last Name *</label>
+						<input type="text" id="last_name" name="last_name" placeholder="Ex: Miyamoto" required>
+						</div>
+				
+					
+						<div class="input">
+						<label for="e-mail">Email *</label>
+						<input type="email" id="e-mail" name="e-mail" placeholder="Ex: musashi@roninmail.com" required> 
+					</div>
+					<div class="input">
+						<label for="phone">Phone Number</label>
+						<input type="tel" id="phone" name="phone"
+						pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" placeholder="Ex: +99(99)9999-9999" minlength="16" title="Please, enter a valid phone number, ex:  +99(99)9999-9999 " maxlength="16">
+					</div>
+					
+						
+					<div class="input">
+						<label for="password">Password *</label>
+						<input type="password" id="password" name="password" required> 
+					</div>
+					<div class="input">
+						<label for="confirm_password">Confirm Password *</label>
+						<input type="password" id="confirm_password" name="confirm_password" required> 
+					</div>	
+					
+				</div>
+					<div class="button">
+						<button type="submit">Create Account</button>
+					</div>
+					
+					<div class="login">
+						<p>Already have an account? Click <a href="index.html">here</a> to login</p>
+					</div>
+						
+				</form>
+			
+			</div>
+		
+		</div>
+	
+	
+	
+	</body>
+</html>

@@ -1,0 +1,144 @@
+@font-face {
+    font-family: Genjiro;
+    font-weight: bold;
+    src: url(fonts/Genjiro-JRymx.otf) format("opentype");
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Urbanist', sans-serif;;
+	box-sizing: border-box; /*<--This removes possible problems with border surpassing the screen size*/
+}
+
+body{
+
+	width: 100vw;
+	height: 100vh;
+}
+
+
+.container{
+	display:flex;
+	flex-direction: row;
+	height: 100%;
+	
+}
+
+.img_container{
+	
+	background-image: url(img/mountain.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 40vw;
+}
+
+
+.img_title{
+	background-color: rgba(0, 0, 0, 0.7);
+	margin-top: 20vh;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 0;
+}
+
+.img_title img{
+	height: 12vh;
+	filter: invert(100%);
+}
+
+.img_title h1{
+	font-family: 'Genjiro';
+	font-size: 60px;
+	color: #FFFFFF;
+}
+
+.form_container{
+	width: 60vw;
+	margin: 0px;
+	padding: 20px;
+	
+}
+
+.form_container h1{
+	margin-top: 50px;
+	font-size: 50px;
+	color: #1D1111;
+}
+
+.form_container p{
+	padding: 10px 50px 20px 0px;
+	text-align: justify;
+}
+.form_div{
+	margin-top: 3vh;
+	display: flex;
+	flex-flow: row wrap;
+	padding-right: 10vw;
+}
+
+.input{
+	width: 250px;
+	padding: 10px;
+	display: flex;
+	flex-flow: column wrap;
+	
+}
+
+input{
+	height: 5vh;
+	border-radius: 5px;
+	border: 1px solid #D6D6D6;
+	padding: 5px;
+	letter-spacing: 1px;
+}
+
+input[type="password"] {
+    font-family: caption;
+	font-size: 15px;
+}
+
+input:not(:placeholder-shown):valid{
+	border-color:green;
+}
+
+input:not(:placeholder-shown):invalid{
+	border-color: red;
+}
+
+.button{
+	margin: 10px 0px 10px 10px;
+	width: 14vw;
+	height: 7vh;
+}
+
+.button button{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	font-size: 15px;
+	background-color: #1D1111;
+	color: #FFFFFF;
+	border: 2px solid #1D1111;
+	
+}
+
+.button button:hover{
+	color: #1D1111;
+	border-color: #1D1111;
+	background-color: #FFFFFF;
+	cursor:pointer;
+}
+
+.login p{
+	padding: 10px;
+}
+
+.login p a{
+	color: #1D1111;
+}
