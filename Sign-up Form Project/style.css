@@ -1,7 +1,7 @@
 @font-face {
     font-family: Genjiro;
     font-weight: bold;
-    src: url(fonts/Genjiro-JRymx.otf) format("opentype");
+    src: url(./fonts/Genjiro-JRymx.otf) format("opentype");
 }
 
 *{
@@ -27,7 +27,7 @@ body{
 
 .img_container{
 	
-	background-image: url(img/mountain.jpg);
+	background-image: url(img/mountain2.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -56,24 +56,27 @@ body{
 	font-family: 'Genjiro';
 	font-size: 60px;
 	color: #FFFFFF;
+	filter: 
 }
 
 .form_container{
 	width: 60vw;
 	margin: 0px;
 	padding: 20px;
+	background-color: #070707;
 	
 }
 
 .form_container h1{
 	margin-top: 50px;
 	font-size: 50px;
-	color: #1D1111;
+	color: #fff;
 }
 
 .form_container p{
 	padding: 10px 50px 20px 0px;
 	text-align: justify;
+	color: #fff;
 }
 .form_div{
 	margin-top: 3vh;
@@ -96,6 +99,8 @@ input{
 	border: 1px solid #D6D6D6;
 	padding: 5px;
 	letter-spacing: 1px;
+	background-color: #070707;
+	color: #fff;
 }
 
 input[type="password"] {
@@ -111,27 +116,32 @@ input:not(:placeholder-shown):invalid{
 	border-color: red;
 }
 
-.button{
+label{
+	color: #fff;
+}
+
+.submit{
 	margin: 10px 0px 10px 10px;
 	width: 14vw;
 	height: 7vh;
 }
 
-.button button{
+#btnSubmit{
 	width: 100%;
 	height: 100%;
-	border-radius: 5px;
-	font-size: 15px;
-	background-color: #1D1111;
-	color: #FFFFFF;
-	border: 2px solid #1D1111;
+	border-radius: 25px;
+	font-size: 18px;
+	font-weight: bold;
+	background-color: #070707;
+	color: #bd0100;
+	border: 5px solid #bd0100;
 	
 }
 
-.button button:hover{
-	color: #1D1111;
-	border-color: #1D1111;
-	background-color: #FFFFFF;
+#btnSubmit:hover{
+	color: #070707;
+	border-color: #070707;
+	background-color: #bd0100;
 	cursor:pointer;
 }
 
@@ -140,5 +150,5 @@ input:not(:placeholder-shown):invalid{
 }
 
 .login p a{
-	color: #1D1111;
+	color: #bd0100;
 }
